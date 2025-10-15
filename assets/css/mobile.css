@@ -1,0 +1,425 @@
+@media (max-width: 768px) {
+    :root {
+        --font-xxl: 21px; /* 55px em 1512px */
+        --font-xl: 16px; /* 45px em 1512px */
+        --font-lg1: 16px; /* 32px em 1512px */
+        --font-lg: 13px; /* 24px em 1512px */
+        --font-md: 10px; /* 20px em 1512px */
+        --font-sm: 10px; /* 15px em 1512px */
+        --font-xsm: clamp(0.625rem, 0.661vw, 1rem); /* 11px em 1512px */
+        --m-30: 1.984vw;
+        --m-70: 4.63vw;
+        --m-80: 40px;
+        --m-95: 6.282vw;
+        --border-radius: 12px;
+    }
+
+    .text-desk {
+        display: none;
+    }
+    .text-mobile {
+        display: block;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .flex-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mb-0 {
+        margin-bottom: 0 !important;
+    }
+    .mb-30 {
+        margin-bottom: var(--m-30);
+    }
+
+    .text {
+        font-family: var(--font-family);
+        line-height: 130%;
+        letter-spacing: 0.31vw;
+        text-transform: uppercase;
+    }
+
+    .bold {
+        font-weight: 700;
+        font-style: Bold;
+    }
+
+    .light {
+        font-weight: 300;
+        font-style: Light;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .container-spacing {
+        padding: 7.936vw 0;
+        gap: 7.936vw;
+    }
+    .col-1 {
+        flex: 1;
+    }
+    .font-xsm {
+        font-size: var(--font-xsm);
+    }
+    .font-sm {
+        font-size: var(--font-sm);
+    }
+    .font-md {
+        font-size: var(--font-md);
+    }
+    .font-lg {
+        font-size: var(--font-lg);
+    }
+    .font-lg1 {
+        font-size: var(--font-lg1);
+    }
+    .font-xxl {
+        font-size: var(--font-xxl);
+    }
+
+    .main-container {
+        padding: 0 4.36vw;
+    }
+
+    .sections-title {
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.31vw;
+    }
+
+    .sections-sub-title {
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .sustentability-title-and-description {
+        margin-bottom: 40px;
+    }
+
+    .sustentability-row-image img {
+        width: 100%;
+        height: 140px;
+    }
+
+    .sustentability-row-text-container .text p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .sustentability-row-text-container .text {
+        padding: 0 2.63vw;
+    }
+
+    .sustentability-bottom-text p {
+        font-weight: 500;
+    }
+
+    .sustentability-bottom-text {
+        width: 100%;
+        letter-spacing: 0.31vw;
+    }
+
+    .raw-materials-container {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+    }
+
+    .raw-materials-images-col:first-child img {
+        height: 282px;
+    }
+
+    .raw-materials-images-col:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .raw-materials-images-col:last-child img {
+        height: 140px;
+    }
+
+    .raw-material-cards-descriptions > p {
+        font-size: var(--font-lg1);
+    }
+    .raw-materials-card {
+        flex: 1 1 calc(50% - 2.447vw);
+    }
+    .raw-materials-card:last-child {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .raw-materials-card p {
+        font-size: 7px;
+    }
+
+    .raw-materials-card:last-child p {
+        font-size: 16px;
+        width: 160px;
+    }
+
+    .raw-materials-card img {
+        max-width: 102px;
+        margin-bottom: 15px;
+    }
+
+    .raw-materials-carrosel-and-text-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .raw-materials-carrosel-and-text p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .raw-materials-carrosel-and-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .raw-materials-carrosel {
+        width: 90vw;
+    }
+
+    .made-in-brazil-banner img {
+        height: 140px;
+    }
+
+    .made-in-brazil-text p {
+        width: 100%;
+        text-align: left;
+        letter-spacing: 0;
+    }
+    .made-in-brazil-banners-and-text:nth-child(even) .made-in-brazil-text p {
+        text-align: left;
+    }
+    .made-in-brazil-banners-and-text {
+        align-items: start;
+    }
+
+    .made-in-brazil-cards-container {
+        padding: 0;
+        gap: 10px;
+    }
+    .made-in-brazil-card {
+        flex-wrap: unset;
+        height: unset;
+        padding: 20px 15px;
+    }
+    .made-in-brazil-card img {
+        width: 100%;
+        max-height: 38px;
+        object-fit: contain;
+    }
+    .made-in-brazil-card .description {
+        font-size: 8px;
+    }
+
+    .made-in-brazil-card .number {
+        font-size: 25px;
+    }
+
+    .made-in-brazil-card .caption {
+        font-size: 6px;
+    }
+
+    .eco-efficiency-texts-container,
+    .eco-efficiency-cards-container {
+        padding: 0;
+    }
+
+    .eco-efficiency-cards-container {
+        flex-direction: column;
+    }
+
+    .eco-efficiency-card {
+        height: 100%;
+        padding: 20px 0;
+        gap: 15px;
+        min-height: 315px;
+    }
+
+    .eco-efficiency-card img {
+        max-width: 69px;
+    }
+
+    .eco-efficiency-card .description {
+        width: 140px;
+    }
+
+    .eco-efficiency-card .caption {
+        width: 194px;
+    }
+
+    .eco-efficiency-cards-texts-mobile {
+        margin-top: 15px;
+    }
+
+    .eco-efficiency-cards-texts-mobile a {
+        margin-top: 15px;
+        text-decoration: none;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .transparency-texts-container {
+        padding: 0;
+        flex-direction: column;
+    }
+    .transparency-texts-container img {
+        width: 100%;
+    }
+
+    .transparency-texts-container p {
+        font-size: 13px;
+    }
+
+    .reverse-logistic-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .reverse-logistic-container h3 {
+        font-weight: 500;
+        text-align: left;
+    }
+    .reverse-logistic-container img {
+        width: 100%;
+    }
+
+    .reverse-logistic-description p b {
+        font-weight: bold;
+    }
+
+    .carbon-footprint-container img {
+        width: 100%;
+    }
+    .carbon-footprint-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .carbon-footprint-title {
+        margin-bottom: 0;
+    }
+    .carbon-footprint-subtitle {
+        font-size: var(--font-md);
+    }
+
+    .carbon-footprint-mobile-link a {
+        margin-top: 15px;
+        text-decoration: none;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .carbon-footprint-mobile-link a img {
+        width: 25px;
+    }
+
+    .sustainability-report-container {
+        flex-direction: column-reverse;
+    }
+
+    .sustainability-report-container img {
+        height: auto;
+    }
+    .sustainability-report-text {
+        padding-right: 0;
+    }
+    .sustainability-report-text h3,
+    .sustainability-report-text p {
+        text-align: left;
+    }
+    .sustainability-report-text h3 {
+        font-size: var(--font-lg1);
+        margin: 15px 0;
+    }
+
+    .sustainability-report-button-container-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sustainability-report-button-container-mobile
+        .sustainability-report-button {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: 50%;
+    }
+
+    .sustainability-certifications-container h3 {
+        text-align: left;
+        font-size: var(--font-lg1);
+    }
+
+    .sustainability-certifications-container {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .company-container {
+        align-items: start;
+    }
+
+    .company-title {
+        font-size: var(--font-lg1);
+    }
+
+    .bottom-container img {
+        width: 100%;
+    }
+    .bottom-container h3 {
+        width: 100%;
+    }
+
+    .video-container {
+    }
+
+    .video {
+        border-radius: 0 0 3rem 3rem;
+    }
+
+    .video-text-container {
+        padding: 2.8125rem;
+    }
+
+    .video-text-container h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.3125rem;
+        margin-bottom: 0.3125rem;
+    }
+    .video-text-container p {
+        text-align: center;
+        width: 100%;
+        font-size: 1.125rem;
+        letter-spacing: 0.11vw;
+    }
+    .video-text-container {
+        justify-content: center;
+        align-items: center;
+    }
+}

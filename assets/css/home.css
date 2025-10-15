@@ -1,0 +1,695 @@
+.video-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.video {
+    width: 100%;
+    border-radius: 0 0 9.375rem 9.375rem;
+    border-bottom: 5px solid var(--color-black);
+}
+
+.video-text-container h1{
+    width: 37.042vw;
+    margin-bottom: 24px;
+}
+.video-text-container {
+    padding: 5.291vw;
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 2;
+    pointer-events: auto;
+    padding-bottom: 7.936vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+
+.main-container {
+    padding: 0 7.013vw;
+}
+
+.section-sustentability,
+.sustentability-title-and-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sustentability-title-and-description {
+    margin-bottom: var(--m-80);
+}
+
+.sections-title {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-xxl);
+    line-height: 110.00000000000001%;
+    letter-spacing: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+}
+
+.sections-sub-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-lg);
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(26, 26, 26, 1);
+}
+
+.sustenbility-title {
+    margin-bottom: var(--m-30);
+}
+
+.sustenbility-sub-title {
+    width: 71.94vw;
+}
+
+.sustentability-row-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--m-70);
+}
+
+.last-row {
+    margin-bottom: 9.921vw;
+}
+
+.sustentability-row-image {
+    flex: 1;
+    border-radius: var(--border-radius);
+}
+
+.sustentability-row-image img {
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 27.119vw;
+}
+
+.sustentability-row-text-container {
+    flex: 1;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.sustentability-row-text-container .text {
+    padding: 0 4.63vw;
+}
+.sustentability-row-text-container .right {
+    text-align: right;
+}
+
+.sustentability-row-text-container .text h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-xl);
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    margin-bottom: var(--m-30);
+}
+
+.sustentability-row-text-container .text p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-sm);
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    width: 27.781vw;
+}
+
+.sustentability-bottom-text {
+    width: 64.166vw;
+    margin-bottom: 5.291vw;
+}
+
+.sustentability-bottom-text p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-lg1);
+    line-height: 120%;
+    letter-spacing: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropdown-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    cursor: pointer;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.dropdown-title h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-xxl);
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.raw-materials-container {
+    padding-top: 3.968vw;
+    padding-bottom: 9.921vw;
+    padding-left: 55px;
+    padding-right: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 7.936vw;
+    align-items: center;
+}
+
+.raw-materials-images-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3.307vw;
+}
+.raw-materials-images-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.raw-materials-images-col img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+.raw-materials-images-col p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-md);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.raw-materials-images-col:first-child img {
+    height: 57.766vw;
+}
+.raw-materials-images-col:last-child img {
+    height: 29.766vw;
+}
+
+.raw-material-cards-descriptions > p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-md);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-transform: uppercase;
+    margin-bottom: var(--m-95);
+}
+
+.raw-materials-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.447vw;
+}
+
+.raw-materials-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(34% - 2.447vw);
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    padding: 2.778vw;
+    box-sizing: border-box;
+}
+
+.raw-materials-card img {
+    max-width: 14.551vw;
+    margin-bottom: 1.65vw;
+}
+.raw-materials-card p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-sm);
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+}
+
+.raw-materials-card p b {
+    font-weight: bold;
+}
+
+.raw-materials-carrosel-and-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65.489vw;
+}
+.raw-materials-carrosel {
+    width: 50%;
+    flex: 1;
+}
+
+.mySwiper,
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 50px;
+}
+
+.swiper-pagination-bullet {
+    background: transparent;
+    border-radius: 0;
+    border-top: 2px solid #8f8f8f;
+    height: 0.625rem;
+    width: 2.8125rem;
+    margin: 0 var(4px);
+    opacity: var(0.2);
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    border-top: 2px solid #1a1a1a;
+}
+
+.swiper-pagination-bullet:hover {
+    background: var(--color-secondary-600);
+}
+
+.swiper-pagination-bullet-active {
+    border-top: 2px solid #1a1a1a;
+}
+.raw-materials-carrosel img {
+    width: 100%;
+}
+
+.raw-materials-carrosel-and-text {
+    flex: 1;
+    text-align: right;
+    padding-right: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.raw-materials-carrosel-and-text p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1.984vw;
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-align: right;
+}
+
+.made-in-brazil-banners-and-text-container {
+    width: 100%;
+    gap: 7.936vw;
+    margin-bottom: 7.936vw;
+}
+
+.made-in-brazil-banners-and-text {
+    align-items: end;
+}
+.made-in-brazil-banners-and-text:nth-child(even) .made-in-brazil-text p {
+    text-align: right;
+}
+.made-in-brazil-banners-and-text:nth-child(even) .made-in-brazil-text {
+    justify-content: right;
+    display: flex;
+}
+.made-in-brazil-banner,
+.made-in-brazil-text {
+    flex: 50%;
+}
+
+.made-in-brazil-banner img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    height: 27.119vw;
+}
+.made-in-brazil-text {
+    padding: 0 var(--m-70);
+    box-sizing: border-box;
+}
+.made-in-brazil-text p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-md);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    width: 28.442vw;
+}
+
+.made-in-brazil-text b {
+    font-weight: bold;
+}
+.made-in-brazil-long-text {
+    padding-left: 0;
+}
+.made-in-brazil-long-text p {
+    width: 95%;
+}
+
+.made-in-brazil-cards-container {
+    padding: 0 20px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 35px;
+    margin-bottom: 7.936vw;
+}
+.made-in-brazil-card {
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    padding: 10px 20px;
+    flex: 1;
+    height: 31.08vw;
+    padding-bottom: 2.646vw;
+    justify-content: end;
+    box-sizing: border-box;
+}
+.made-in-brazil-card img {
+    margin-bottom: 1.323vw;
+}
+.made-in-brazil-card .number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 5.62vw;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.made-in-brazil-card .description {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-lg);
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 1.323vw;
+}
+.made-in-brazil-card .description b {
+    font-weight: bold;
+}
+.made-in-brazil-card .caption {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.eco-efficiency-container {
+    padding: 7.936vw 0;
+    gap: 7.936vw;
+}
+
+.eco-efficiency-container p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-lg);
+    line-height: 130%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+}
+
+.eco-efficiency-cards-container {
+    gap: var(--m-30);
+}
+
+.eco-efficiency-texts-container,
+.eco-efficiency-cards-container {
+    padding: 0 3.66vw;
+}
+
+.eco-efficiency-card {
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    padding: 10px 30px;
+    flex: 1;
+    height: 42.335vw;
+    padding-bottom: 2.646vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+.eco-efficiency-card .number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 5.62vw;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.eco-efficiency-card .description {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-lg);
+    line-height: 130%;
+    text-align: center;
+    width: 17.197vw;
+}
+.eco-efficiency-card .description b {
+    font-weight: bold;
+    font-style: bold;
+}
+.eco-efficiency-card .caption {
+    margin-top: 3.307vw;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: var(--font-sm);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+.eco-efficiency-card .caption b {
+    font-weight: bold;
+    font-style: bold;
+}
+
+.eco-efficiency-texts-container {
+    gap: var(--m-30);
+}
+
+.eco-efficiency-text {
+    flex: 1;
+}
+
+.eco-efficiency-text h4 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: var(--font-xl);
+    line-height: 110%;
+    letter-spacing: 0.0622vw;
+    text-transform: uppercase;
+    margin-bottom: 2.447vw;
+}
+
+.eco-efficiency-text p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-md);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.transparency-container {
+    padding: 7.936vw 0;
+    gap: 7.936vw;
+}
+
+.transparency-description {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-style: Light;
+    font-size: var(--font-lg);
+    line-height: 130%;
+    letter-spacing: 0.1322vw;
+    text-transform: uppercase;
+}
+
+.transparency-texts-container {
+    padding: 0 7.4vw;
+    gap: 4.63vw;
+}
+
+.transparency-text-col {
+    flex: 1;
+    gap: 2.646vw;
+}
+
+.transparency-texts-container img{
+    width: 100%;
+}
+
+.reverse-logistic-content-container {
+    gap: 5.952vw;
+    padding: 0 5.952vw;
+}
+
+.text-spacing {
+    padding-left: 4.63vw;
+}
+
+.carbon-footprint-title {
+    letter-spacing: 0.065vw;
+    line-height: 110%;
+    margin-bottom: 15px;
+}
+.carbon-footprint-subtitle {
+    letter-spacing: 0.065vw;
+    line-height: 110%;
+}
+.carbon-footprint-text {
+    font-size: 15px;
+}
+
+.sustainability-report-img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 27.119vw;
+    object-fit: cover;
+}
+
+.sustainability-report-text {
+    padding-right: 4.63vw;
+}
+.sustainability-report-text h3 {
+    margin-bottom: 2.447vw;
+}
+
+.sustainability-report-container {
+    padding: 7.936vw 0;
+}
+
+.sustainability-report-button {
+    padding: 1.55vw 3.63vw;
+    border-radius: 6.613vw;
+    background: var(--color-white);
+    border: 0.0563rem solid var(--color-black);
+    width: 12.897vw;
+    text-decoration: none;
+    text-align: center;
+    margin-top: -2.646vw;
+    color: var(--color-black);
+}
+.sustainability-certifications-container {
+    margin-bottom: 7.936vw;
+}
+
+.sustainability-certifications-container h3 {
+    margin-bottom: 2.646vw;
+}
+
+.sustainability-certifications-container p {
+    margin-bottom: 3.968vw;
+}
+
+.company-title {
+    margin-bottom: var(--m-30);
+}
+
+.company-col img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 7.936vw;
+    border-radius: var(--border-radius);
+}
+
+.bottom-container {
+    gap: 0;
+}
+.bottom-container h3 {
+    width: 30.781vw;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    object-fit: cover;
+}
+
+.dropdown-container {
+    border-bottom: 3px solid rgba(26, 26, 26, 1);
+}
+.dropdown-container .dropdown-trigger {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    max-height: 0;
+    position: fixed;
+    transition: opacity 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        max-height 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dropdown-container.is-open .dropdown-trigger {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding: auto;
+    max-height: 100%;
+    position: initial;
+}
+
+.dropdown-container .dropdown-title img {
+    transition: transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.dropdown-container.is-open .dropdown-title img {
+    transform: rotate(180deg);
+}
