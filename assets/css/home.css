@@ -3,17 +3,17 @@
     position: relative;
     display: inline-block;
     color: var(--color-white);
-    margin-bottom: 50px;
+    margin-bottom: 8rem;
 }
 
 .video {
     width: 100%;
     border-radius: 0 0 9.375rem 9.375rem;
-    border-bottom: 5px solid var(--color-black);
+    border-bottom: 0.5rem solid var(--color-black);
 }
 
-.video-text-container h1{
-    width: 37.042vw;
+.video-text-container h1 {
+    width: 38.042vw;
     margin-bottom: 24px;
 }
 .video-text-container {
@@ -28,8 +28,6 @@
     flex-direction: column;
     justify-content: end;
 }
-
-
 
 .main-container {
     padding: 0 7.013vw;
@@ -444,8 +442,8 @@
 }
 
 .eco-efficiency-container {
-    padding: 7.936vw 0;
-    gap: 7.936vw;
+    padding: 5.291vw 0;
+    gap: 5.291vw;
 }
 
 .eco-efficiency-container p {
@@ -547,8 +545,8 @@
 }
 
 .transparency-container {
-    padding: 7.936vw 0;
-    gap: 7.936vw;
+    padding: 5.291vw 0;
+    gap: 5.291vw;
 }
 
 .transparency-description {
@@ -571,7 +569,7 @@
     gap: 2.646vw;
 }
 
-.transparency-texts-container img{
+.transparency-texts-container img {
     width: 100%;
 }
 
@@ -580,10 +578,19 @@
     padding: 0 5.952vw;
 }
 
+.reverse-logistic-content-container img {
+    width: 100%;
+}
 .text-spacing {
     padding-left: 4.63vw;
 }
 
+.carbon-footprint-container {
+    align-items: start;
+}
+.carbon-footprint-container img {
+    width: 100%;
+}
 .carbon-footprint-title {
     letter-spacing: 0.065vw;
     line-height: 110%;
@@ -645,7 +652,6 @@
 .company-col img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 7.936vw;
     border-radius: var(--border-radius);
 }
 
@@ -653,7 +659,7 @@
     gap: 0;
 }
 .bottom-container h3 {
-    width: 30.781vw;
+    width: 31.781vw;
 }
 
 .swiper {

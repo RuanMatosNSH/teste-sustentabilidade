@@ -45,7 +45,9 @@
                     sustentabilidade é nosso guia rumo a um futuro
                     extraordinário
                 </h1>
-                <p class="text light font-md">A Melissa se torna cada dia mais circular e responsável.</p>
+                <p class="text light font-md">
+                    A Melissa se torna cada dia mais circular e responsável.
+                </p>
             </div>
         </div>
         <div class="main-container">
@@ -178,6 +180,8 @@
                                     novas tecnologias – o que torna nossos
                                     produtos cada vez melhores e os diferencia
                                     no mercado global.
+                                    <br />
+                                    <br />
                                 </p>
                                 <p>
                                     Melflex é o ponto de partida da Melissa: a
@@ -295,58 +299,11 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <a
-                                            href="https://www.melissa.com.br/p/melissa-becky-marc-jacobs/33968"
-                                            target="_blank"
-                                        >
-                                            <img
-                                                src="./assets/img/raw-materials/Becky.png"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <img
-                                                src="./assets/img/raw-materials/Flox m edition.png"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a
-                                            href="https://www.melissa.com.br/p/melissa-coturno/32822?variantName=gren_color&variantValue=LILAS%20PEROLADO"
-                                            target="_blank"
-                                        >
-                                            <img
-                                                src="./assets/img/raw-materials/Coturno.png"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a
-                                            href="https://www.melissa.com.br/p/melissa-punk-love-pump-jean-paul-gaultier/33933"
-                                            target="_blank"
-                                        >
-                                            <img
-                                                src="./assets/img/raw-materials/Punk love pump.png"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a
                                             href="https://www.melissa.com.br/p/melissa-drip-boot-vibram/33871?variantName=gren_color&variantValue=Preto/bege"
                                             target="_blank"
                                         >
                                             <img
                                                 src="./assets/img/raw-materials/Drip boot.png"
-                                            />
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a
-                                            href="https://www.melissa.com.br/p/melissa-kick-off-sandal-metallic/36081?variantName=gren_color&variantValue=PRATA"
-                                            target="_blank"
-                                        >
-                                            <img
-                                                src="./assets/img/raw-materials/Kick off.png"
                                             />
                                         </a>
                                     </div>
@@ -1005,6 +962,7 @@
                                 alt="Relatório de Sustentabilidade banner"
                             />
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -1073,16 +1031,20 @@
                 slidesPerView: 5,
                 effect: "coverflow",
                 loop: true,
-                /* width: 100, */
+                centeredSlides: true,
+                /* width: 1000, */
+                setWrapperSize: true,
+                spaceBetween: "-10%",
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
-                    depth: 0,
+                    depth: 100,
                     modifier: 1,
                     slideShadows: false,
                     scale: 0.9,
                 },
             });
+            console.log(swiper);
         </script>
         <script>
             var swiper = new Swiper(".mySwiper", {
