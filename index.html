@@ -144,7 +144,11 @@
                 class="raw-materials dropdown-container flex-col flex-center"
                 id="raw-materials"
             >
-                <div class="dropdown-title">
+                <div
+                    class="dropdown-title"
+                    onclick="toggleDropdown('raw-materials')"
+                    id="raw-materials-title"
+                >
                     <h3>Matéria-prima</h3>
                     <span class="arrow">
                         <img
@@ -318,7 +322,10 @@
                 class="made-in-brazil dropdown-container flex-col flex-center"
                 id="made-in-brazil"
             >
-                <div class="dropdown-title">
+                <div
+                    class="dropdown-title"
+                    onclick="toggleDropdown('made-in-brazil')"
+                >
                     <h3>Feito no Brasil</h3>
                     <div class="arrow">
                         <img
@@ -447,7 +454,10 @@
                 class="eco-efficiency dropdown-container flex-col flex-center"
                 id="eco-efficiency"
             >
-                <div class="dropdown-title">
+                <div
+                    class="dropdown-title"
+                    onclick="toggleDropdown('eco-efficiency')"
+                >
                     <h3>Ecoeficiência</h3>
                     <div class="arrow">
                         <img
@@ -645,9 +655,12 @@
             </section>
             <section
                 class="eco-efficiency dropdown-container flex-col flex-center"
-                id="eco-efficiency"
+                id="transparency"
             >
-                <div class="dropdown-title">
+                <div
+                    class="dropdown-title"
+                    onclick="toggleDropdown('transparency')"
+                >
                     <h3>Transparência</h3>
                     <div class="arrow">
                         <img
@@ -962,7 +975,6 @@
                                 alt="Relatório de Sustentabilidade banner"
                             />
                         </div>
-                       
                     </div>
                 </div>
             </div>
@@ -1062,16 +1074,11 @@
         </script>
 
         <script>
-            (function attachAccordion() {
-                const items = document.querySelectorAll(".dropdown-container");
-                items.forEach((item) => {
-                    const btn = item.querySelector(".dropdown-title");
-                    btn.addEventListener("click", (el) => {
-                        const open = item.classList.toggle("is-open");
-                        btn.setAttribute("aria-expanded", String(open));
-                    });
-                });
-            })();
+            function toggleDropdown(id) {
+                const dropdown = document.getElementById(id);
+                const open = dropdown.classList.toggle("is-open");
+                dropdown.setAttribute("aria-expanded", String(open));
+            }
         </script>
         <script>
             const modal = document.getElementById("modal-container");
@@ -1160,13 +1167,13 @@
             }
 
             // Eventos de toque / mouse
-         /*    modal.addEventListener("touchstart", startDrag, { passive: true });
+            modal.addEventListener("touchstart", startDrag, { passive: true });
             modal.addEventListener("touchmove", duringDrag, { passive: true });
             modal.addEventListener("touchend", endDrag);
 
             modal.addEventListener("mousedown", startDrag);
             modal.addEventListener("mousemove", duringDrag);
-            modal.addEventListener("mouseup", endDrag); */
+            modal.addEventListener("mouseup", endDrag);
 
             function startDrag(e) {
                 isDragging = true;
