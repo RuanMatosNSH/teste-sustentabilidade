@@ -1094,7 +1094,9 @@
             }
         </script>
         <script>
-            const modal = document.getElementById("modal-container");
+
+            const modal = document.getElementById("mobile-modal");
+            const modalContainer = document.getElementById("modal-container");
             const modalOverlay = document.getElementById("mobile-modal");
             const textsAndTitles = {
                 water: {
@@ -1166,20 +1168,20 @@
                 const modalText = document.getElementById("modal-description");
                 modalTitle.innerText = textAndTitle.title;
                 modalText.innerHTML = textAndTitle.text;
-                modalOverlay.classList.add("active");
+                modal.style.display = "block";
+
+                
             }
             function closeModal() {
-                const modalContainer =
-                    document.getElementById("modal-container");
-                const root =
-                    document.getElementById("root");
-                modalContainer.classList.add("close");
 
-                root.classList.add("teste-ruan");
+                modal.style.display = "block";
+               /*  const modalContainer =
+                    document.getElementById("modal-container");
+                modalContainer.classList.add("close");
                 setTimeout(() => {
                     modalOverlay.classList.remove("active");
                     modalContainer.classList.remove("close");
-                }, 300);
+                }, 300); */
             }
 
             // Eventos de toque / mouse
