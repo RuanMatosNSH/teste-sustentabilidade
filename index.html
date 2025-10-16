@@ -1057,7 +1057,6 @@
                 effect: "coverflow",
                 loop: true,
                 centeredSlides: true,
-                /* width: 1000, */
                 setWrapperSize: true,
                 spaceBetween: "-10%",
                 coverflowEffect: {
@@ -1069,7 +1068,6 @@
                     scale: 0.9,
                 },
             });
-            console.log(swiper);
         </script>
         <script>
             var swiper = new Swiper(".mySwiper", {
@@ -1094,7 +1092,6 @@
             }
         </script>
         <script>
-
             const modal = document.getElementById("mobile-modal");
             const modalContainer = document.getElementById("modal-container");
             const modalOverlay = document.getElementById("mobile-modal");
@@ -1162,26 +1159,21 @@
                         no mercado calçadista</span>`,
                 },
             };
-            function openModal(name) {
+            function openModal(name, t) {
                 const textAndTitle = textsAndTitles[name];
                 const modalTitle = document.getElementById("modal-title");
                 const modalText = document.getElementById("modal-description");
                 modalTitle.innerText = textAndTitle.title;
                 modalText.innerHTML = textAndTitle.text;
                 modal.style.display = "block";
-
-                
+                modal.style.transform = `translateY(0px)`;
+                setTimeout(() => {
+                    const scroller = modal; // agora quem rola é o body
+                    scroller.scrollTo({ top: 666000, behavior: "auto" });
+                }, 2002);
             }
             function closeModal() {
-
-                modal.style.display = "block";
-               /*  const modalContainer =
-                    document.getElementById("modal-container");
-                modalContainer.classList.add("close");
-                setTimeout(() => {
-                    modalOverlay.classList.remove("active");
-                    modalContainer.classList.remove("close");
-                }, 300); */
+                modal.style.display = "none";
             }
 
             // Eventos de toque / mouse
@@ -1212,10 +1204,8 @@
                 isDragging = false;
                 const diff = currentY - startY;
                 if (diff > 100) {
-                    // gesto suficiente -> fecha
                     closeModal();
                 } else {
-                    // volta ao lugar
                     modal.style.transition = "transform 0.2s ease";
                     modal.style.transform = "translateY(0)";
                     setTimeout(() => (modal.style.transition = ""), 200);
