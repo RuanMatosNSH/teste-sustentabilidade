@@ -299,6 +299,10 @@
         flex-direction: column-reverse;
     }
 
+    .reverse-logistic-button {
+        width: 100%;
+    }
+
     .reverse-logistic-container h3 {
         font-weight: 500;
         text-align: left;

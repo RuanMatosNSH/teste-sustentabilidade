@@ -38,7 +38,7 @@
                 loop
                 autoplay
                 muted
-                src="./assets/videos/https___www.rider.com.br_ccstore_v1_images__source=_file_v4751941836710922817_products_cor.12359.12359BB55610_o.jpg&heig - OCC 2024-11-21 10-34-59.mp4"
+                src="./assets/videos/MELISSA-sustentabilidade.mp4"
             ></video>
             <div class="video-text-container">
                 <h1 class="text font-xxl bold">
@@ -621,7 +621,8 @@
                                     Desde 2021, o consumo de eletricidade em
                                     nossas operações é 100% proveniente de
                                     fontes renováveis. Esse dado é comprovado
-                                    por meio do selo de rastreabilidade I-REC<br /><br />
+                                    por meio do selo de rastreabilidade
+                                    I-REC.<br /><br />
                                 </p>
                                 <p>
                                     A Grendene, companhia da qual fazemos parte,
@@ -764,6 +765,17 @@
                                 encontre o seu!
                             </p>
                         </span>
+                        <a
+                            href="https://www.melissa.com.br/recicla-mais-grendene"
+                            target="_blank"
+                            class="reverse-logistic-button-link"
+                        >
+                            <button
+                                class="reverse-logistic-button text light font"
+                            >
+                                Confira o site Grendene Recicla+
+                            </button>
+                        </a>
                     </div>
                     <div class="reverse-logistic-description flex-col col-1">
                         <img
@@ -1025,18 +1037,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="mobile-modal">
-            <div class="modal-container" id="modal-container">
-                <div class="modal-top-bar"></div>
-                <div class="text font-lg1">
-                    <h4 class="text bold font-xl mb-30" id="modal-title"></h4>
-                    <p id="modal-description"></p>
-                </div>
-                <div class="modal-button-container">
-                    <button onclick="closeModal()">fechar</button>
-                </div>
-            </div>
-        </div>
+
         <script src="./assets/js/swipper12.js"></script>
         <script type="module">
             var swiper = new Swiper(".swiper", {
@@ -1148,7 +1149,6 @@
                 },
             };
             function openModal(name) {
-                console.log(name);
                 const textAndTitle = textsAndTitles[name];
                 const modalTitle = document.getElementById("modal-title");
                 const modalText = document.getElementById("modal-description");
@@ -1167,13 +1167,13 @@
             }
 
             // Eventos de toque / mouse
-           /*  modal.addEventListener("touchstart", startDrag, { passive: true });
+            modal.addEventListener("touchstart", startDrag, { passive: true });
             modal.addEventListener("touchmove", duringDrag, { passive: true });
             modal.addEventListener("touchend", endDrag);
 
             modal.addEventListener("mousedown", startDrag);
             modal.addEventListener("mousemove", duringDrag);
-            modal.addEventListener("mouseup", endDrag); */
+            modal.addEventListener("mouseup", endDrag);
 
             function startDrag(e) {
                 isDragging = true;

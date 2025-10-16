@@ -1,3 +1,13 @@
+html,
+body {
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Edge */
+}
 .video-container {
     width: 100%;
     position: relative;
@@ -581,6 +591,25 @@
 .reverse-logistic-content-container img {
     width: 100%;
 }
+
+.reverse-logistic-button {
+    border-radius: 6.25rem;
+    padding-top: 0.75rem;
+    padding-right: 1rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    gap: 0.625rem;
+    opacity: 1;
+    background: #1a1a1a;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-white);
+    margin-top: 1.875rem;
+}
+.reverse-logistic-button:hover {
+    background: #404040;
+}
+
 .text-spacing {
     padding-left: 4.63vw;
 }
