@@ -1171,7 +1171,11 @@
             function closeModal() {
                 const modalContainer =
                     document.getElementById("modal-container");
+                const root =
+                    document.getElementById("root");
                 modalContainer.classList.add("close");
+
+                root.classList.add("teste-ruan");
                 setTimeout(() => {
                     modalOverlay.classList.remove("active");
                     modalContainer.classList.remove("close");
