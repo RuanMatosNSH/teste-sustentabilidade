@@ -32,24 +32,14 @@
     </head>
 
     <body>
-        <div class="modal" id="mobile-modal">
-            <div class="modal-container" id="modal-container">
-                <div class="modal-top-bar"></div>
-                <div class="text font-lg1">
-                    <h4 class="text bold font-xl mb-30" id="modal-title"></h4>
-                    <p id="modal-description"></p>
-                </div>
-                <div class="modal-button-container">
-                    <button onclick="closeModal()">fechar</button>
-                </div>
-            </div>
-        </div>
         <div class="video-container">
             <video
                 class="video"
                 loop
                 autoplay
                 muted
+                playsinline
+                autobuffer
                 src="./assets/videos/MELISSA-sustentabilidade.mp4"
             ></video>
             <div class="video-text-container">
@@ -519,12 +509,37 @@
                                 </p>
                                 <a
                                     class="text font-md flex-row text-left bold"
-                                    onclick="openModal('water')"
-                                    >Ler mais
+                                    onclick="openDescription('water')"
+                                >
+                                    <span id="water-link-text">Ler mais</span>
                                     <img
                                         src="./assets/img/link-arrow.png"
                                         alt="Link arrow"
+                                        id="water-link-icon"
+                                        class="mobile-link-open-description"
                                 /></a>
+                                <p
+                                    class="mobile-description-text-expanded text font-sm light mb-30"
+                                    id="water-description"
+                                >
+                                    Sem água, não há vida. Simples assim, certo?
+                                    Por isso, adotamos práticas conscientes no
+                                    uso desse recurso precioso. Implementamos
+                                    ações para garantir o uso consciente e
+                                    eficiente da água em nossos processos.
+                                    <br /><br />Monitoramos continuamente nossas
+                                    fontes de captação, buscando otimizar o
+                                    aproveitamento dos recursos hídricos e como
+                                    resultado, alcançamos baixos níveis de
+                                    consumo de água.<br /><br />
+                                    > Captação de água da chuva;<br />
+                                    > Tratamento e reuso de todo o efluente
+                                    gerado nos processos industriais; <br />>
+                                    Reaproveitamento da água usada na produção,
+                                    evitando desperdício; <br />> Acompanhamento
+                                    constante do consumo de água, para encontrar
+                                    sempre novas formas de economizar.
+                                </p>
                             </div>
                         </div>
                         <div class="col-1">
@@ -553,12 +568,34 @@
                                 </p>
                                 <a
                                     class="text font-md flex-row text-left bold"
-                                    onclick="openModal('energy')"
-                                    >Ler mais
+                                    onclick="openDescription('energy')"
+                                >
+                                    <span id="energy-link-text">Ler mais</span>
                                     <img
                                         src="./assets/img/link-arrow.png"
                                         alt="Link arrow"
+                                        id="energy-link-icon"
+                                        class="mobile-link-open-description"
                                 /></a>
+                                <p
+                                    class="energy-text mobile-description-text-expanded text font-sm light mb-30"
+                                    id="energy-description"
+                                >
+                                    Desde 2021, o consumo de eletricidade em
+                                    nossas operações é 100% proveniente de
+                                    fontes renováveis. Esse dado é comprovado
+                                    por meio do selo de rastreabilidade
+                                    I-REC.<br /><br />
+                                    A Grendene, companhia da qual fazemos parte,
+                                    tem três usinas próprias, com potência
+                                    instalada total de 3,27 MWp – em Sobral e
+                                    Crato, no Ceará, e em Farroupilha, no Rio
+                                    Grande do Sul. Elas suprem uma parcela da
+                                    demanda de energia elétrica das nossas
+                                    operações. Em 2024 geramos 4,25 GWh na
+                                    Grendene, e nossas emissões evitadas com
+                                    essa autogeração foram de 1.899,97tCO2e.
+                                </p>
                             </div>
                         </div>
                         <div class="col-1">
@@ -590,12 +627,28 @@
                                 </p>
                                 <a
                                     class="text font-md flex-row text-left bold"
-                                    onclick="openModal('residue')"
-                                    >Ler mais
+                                    onclick="openDescription('residue')"
+                                    ><span id="residue-link-text"
+                                        >Ler mais</span
+                                    >
                                     <img
                                         src="./assets/img/link-arrow.png"
                                         alt="Link arrow"
+                                        id="residue-link-icon"
+                                        class="mobile-link-open-description"
                                 /></a>
+                                <p
+                                    class="carbon-footprint-text mobile-description-text-expanded text font-sm light mb-30"
+                                    id="residue-description"
+                                >
+                                    O processo produtivo da Melissa é todo
+                                    interno, o que nos dá total controle sobre a
+                                    gestão dos nossos resíduos.<br /><br />
+                                    Não enviamos resíduos para aterro sanitário
+                                    priorizando a prevenção, redução, reuso,
+                                    reciclagem e valorização energética antes da
+                                    disposição final.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -851,12 +904,45 @@
                         </p>
                         <a
                             class="text font-md flex-row text-left bold"
-                            onclick="openModal('carbon-footprint')"
-                            >Ler mais
+                            onclick="openDescription('carbon-footprint')"
+                        >
+                            <span id="carbon-footprint-link-text"
+                                >Ler mais</span
+                            >
                             <img
                                 src="./assets/img/link-arrow.png"
                                 alt="Link arrow"
+                                id="carbon-footprint-link-icon"
+                                class="mobile-link-open-description"
                         /></a>
+                        <p
+                            class="carbon-footprint-text mobile-description-text-expanded text font-sm light mb-30"
+                            id="carbon-footprint-description"
+                        >
+                            Trabalhamos com objetivos concretos de redução de
+                            emissões de GEE. E temos muito orgulho dos valores
+                            que já alcançamos: cada par de Melissa gera apenas
+                            254g CO2e*, uma pegada menor que a dos calçados
+                            convencionais **.<br /><br />
+                            Para chegar a esse resultado, mapeamos
+                            cuidadosamente nossas emissões ao longo de toda a
+                            jornada produtiva, isto é, desde a extração da
+                            matéria-prima até chegar ao consumidor final.<br /><br />
+                            Por meio de processos ecoeficientes e da escolha
+                            consciente do Melflex como matéria-prima,
+                            conseguimos reduzir significativamente nossas
+                            emissões. O selo GHG Protocol reforça nosso olhar
+                            para as emissões como um compromisso contínuo. Uma
+                            jornada que mostra que é possível seguir
+                            fortalecendo nossa marca sem aumentar a pegada de
+                            carbono.<br /><br /><br />
+                            <span class="font-sm">
+                                * Fonte: Relatório de Sustentabilidade Grendene
+                                2024<br />** Fonte: relatórios de
+                                sustentabilidade publicados no mercado
+                                calçadista</span
+                            >
+                        </p>
                     </span>
                 </div>
             </div>
@@ -941,62 +1027,66 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/Ghg.png"
+                                alt="Ghg protocol badge"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/abvtex sedex.png"
+                                alt="abvtex sedex member badge"
+                            />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./assets/img/sustainability-certifications/vegan.png"
+                                alt="Vegan badge"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/Irec.png"
+                                alt="I-REC standard badge"
+                            />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./assets/img/sustainability-certifications/Fsc.png"
+                                alt="Fsc badge"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/Ghg.png"
+                                alt="Ghg protocol badge"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/abvtex sedex.png"
+                                alt="abvtex sedex member badge"
+                            />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./assets/img/sustainability-certifications/vegan.png"
+                                alt="Vegan badge"
                             />
                         </div>
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/Irec.png"
+                                alt="I-REC standard badge"
                             />
                         </div>
+
                         <div class="swiper-slide">
                             <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="./assets/img/sustainability-certifications/3.png"
-                                alt="Relatório de Sustentabilidade banner"
+                                src="./assets/img/sustainability-certifications/Fsc.png"
+                                alt="Fsc badge"
                             />
                         </div>
                     </div>
@@ -1053,12 +1143,17 @@
         <script src="./assets/js/swipper12.js"></script>
         <script type="module">
             var swiper = new Swiper(".swiper", {
-                slidesPerView: 5,
                 effect: "coverflow",
                 loop: true,
-                centeredSlides: true,
+                slidesPerView: 3,
+                /* centeredSlides: true, */
                 setWrapperSize: true,
                 spaceBetween: "-10%",
+                breakpoints: {
+                    768: {
+                        slidesPerView: 5,
+                    },
+                },
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
@@ -1091,125 +1186,28 @@
                 dropdown.setAttribute("aria-expanded", String(open));
             }
         </script>
+
         <script>
-            const modal = document.getElementById("mobile-modal");
-            const modalContainer = document.getElementById("modal-container");
-            const modalOverlay = document.getElementById("mobile-modal");
-            const textsAndTitles = {
-                water: {
-                    title: "Água",
-                    text: `Sem água, não há vida. Simples assim, certo? Por isso,
-                        adotamos práticas conscientes no uso desse recurso
-                        precioso. Implementamos ações para garantir o uso
-                        consciente e eficiente da água em nossos processos.
-                        <br /><br />Monitoramos continuamente nossas fontes de
-                        captação, buscando otimizar o aproveitamento dos
-                        recursos hídricos e como resultado, alcançamos baixos
-                        níveis de consumo de água.<br /><br />
-                        > Captação de água da chuva;<br />
-                        > Tratamento e reuso de todo o efluente gerado nos
-                        processos industriais; <br />> Reaproveitamento da água
-                        usada na produção, evitando desperdício; <br />>
-                        Acompanhamento constante do consumo de água, para
-                        encontrar sempre novas formas de economizar.`,
-                },
-                energy: {
-                    title: "Energia",
-                    text: `
-                        Desde 2021, o consumo de eletricidade em nossas
-                        operações é 100% proveniente de fontes renováveis. Esse
-                        dado é comprovado por meio do selo de rastreabilidade
-                        I-REC.<br/><br/> A Grendene, companhia da qual fazemos parte, tem
-                        três usinas próprias, com potência instalada total de
-                        3,27 MWp – em Sobral e Crato, no Ceará, e em
-                        Farroupilha, no Rio Grande do Sul. Elas suprem uma
-                        parcela da demanda de energia elétrica das nossas
-                        operações. Em 2024 geramos 4,25 GWh na Grendene, e
-                        nossas emissões evitadas com essa autogeração foram de
-                        1.899,97tCO2e.`,
-                },
-                residue: {
-                    title: "Resíduos",
-                    text: `
-                        O processo produtivo da Melissa é todo interno, o que
-                        nos dá total controle sobre a gestão dos nossos
-                        resíduos.<br/><br/> Não enviamos resíduos para aterro sanitário
-                        priorizando a prevenção, redução, reuso, reciclagem e
-                        valorização energética antes da disposição final.`,
-                },
-                "carbon-footprint": {
-                    title: "pegada de carbono",
-                    text: `
-                        Trabalhamos com objetivos concretos de redução de
-                        emissões de GEE. E temos muito orgulho dos valores que
-                        já alcançamos: cada par de Melissa gera apenas 254g
-                        CO2e*, uma pegada menor que a dos calçados convencionais
-                        **.<br/><br/> Para chegar a esse resultado, mapeamos
-                        cuidadosamente nossas emissões ao longo de toda a
-                        jornada produtiva, isto é, desde a extração da
-                        matéria-prima até chegar ao consumidor final.<br/><br/> Por meio
-                        de processos ecoeficientes e da escolha consciente do
-                        Melflex como matéria-prima, conseguimos reduzir
-                        significativamente nossas emissões. O selo GHG Protocol
-                        reforça nosso olhar para as emissões como um compromisso
-                        contínuo. Uma jornada que mostra que é possível seguir
-                        fortalecendo nossa marca sem aumentar a pegada de
-                        carbono.<br/><br/><br/> <span class="font-sm"> * Fonte: Relatório de Sustentabilidade Grendene
-                        2024<br/>** Fonte: relatórios de sustentabilidade publicados
-                        no mercado calçadista</span>`,
-                },
-            };
-            function openModal(name, t) {
-                const textAndTitle = textsAndTitles[name];
-                const modalTitle = document.getElementById("modal-title");
-                const modalText = document.getElementById("modal-description");
-                modalTitle.innerText = textAndTitle.title;
-                modalText.innerHTML = textAndTitle.text;
-                modal.style.display = "block";
-                modal.style.transform = `translateY(0px)`;
-                setTimeout(() => {
-                    const scroller = modal; // agora quem rola é o body
-                    scroller.scrollTo({ top: 666000, behavior: "auto" });
-                }, 2002);
-            }
-            function closeModal() {
-                modal.style.display = "none";
-            }
+            function openDescription(sectionId) {
+                const textArea = document.getElementById(
+                    `${sectionId}-description`
+                );
+                const linkIcon = document.getElementById(
+                    `${sectionId}-link-icon`
+                );
+                const linkText = document.getElementById(
+                    `${sectionId}-link-text`
+                );
 
-            // Eventos de toque / mouse
-            modal.addEventListener("touchstart", startDrag, { passive: true });
-            modal.addEventListener("touchmove", duringDrag, { passive: true });
-            modal.addEventListener("touchend", endDrag);
-
-            modal.addEventListener("mousedown", startDrag);
-            modal.addEventListener("mousemove", duringDrag);
-            modal.addEventListener("mouseup", endDrag);
-
-            function startDrag(e) {
-                isDragging = true;
-                startY = e.touches ? e.touches[0].clientY : e.clientY;
-            }
-
-            function duringDrag(e) {
-                if (!isDragging) return;
-                currentY = e.touches ? e.touches[0].clientY : e.clientY;
-                const diff = currentY - startY;
-                if (diff > 0) {
-                    modal.style.transform = `translateY(${diff}px)`;
-                }
-            }
-
-            function endDrag() {
-                if (!isDragging) return;
-                isDragging = false;
-                const diff = currentY - startY;
-                if (diff > 100) {
-                    closeModal();
+                if (linkText.innerText === "LER MAIS") {
+                    linkText.innerText = "LER MENOS";
                 } else {
-                    modal.style.transition = "transform 0.2s ease";
-                    modal.style.transform = "translateY(0)";
-                    setTimeout(() => (modal.style.transition = ""), 200);
+                    linkText.innerText = "LER MAIS";
                 }
+
+                linkIcon.classList.toggle("active");
+
+                textArea.classList.toggle("active");
             }
         </script>
     </body>

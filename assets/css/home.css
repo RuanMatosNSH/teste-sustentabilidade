@@ -728,3 +728,84 @@ html::-webkit-scrollbar {
 .dropdown-container.is-open .dropdown-title img {
     transform: rotate(180deg);
 }
+
+.mobile-description-text-expanded {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    max-height: 0;
+    position: fixed;
+    transition: opacity 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+        max-height 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-animation-name: hideDescriptionText;
+    -webkit-animation-duration: 0.4s;
+    animation-name: hideDescriptionText;
+    animation-duration: 0.4s;
+}
+
+.mobile-description-text-expanded.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding: auto;
+    max-height: 100%;
+    position: initial;
+    -webkit-animation-name: showDescriptionText;
+    -webkit-animation-duration: 0.8s;
+    animation-name: showDescriptionText;
+    animation-duration: 0.8s;
+}
+
+.mobile-link-open-description {
+    transition: transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-animation-name: rotateArrowLeft;
+    -webkit-animation-duration: 0.4s;
+    animation-name: rotateArrowLeft;
+    animation-duration: 0.4s;
+    transform: rotate(0);
+}
+.mobile-link-open-description.active {
+    -webkit-animation-name: rotateArrowRight;
+    -webkit-animation-duration: 0.4s;
+    animation-name: rotateArrowRight;
+    animation-duration: 0.4s;
+    transform: rotate(90deg);
+}
+
+@keyframes rotateArrowRight {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotateArrowLeft {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+@keyframes showDescriptionText {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes hideDescriptionText {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+}
