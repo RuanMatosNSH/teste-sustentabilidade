@@ -463,7 +463,6 @@ html::-webkit-scrollbar {
     font-size: var(--font-lg);
     line-height: 130%;
     letter-spacing: 4%;
-    text-transform: uppercase;
 }
 
 .eco-efficiency-cards-container {
@@ -481,10 +480,14 @@ html::-webkit-scrollbar {
     color: var(--color-white);
     padding: 10px 30px;
     flex: 1;
-    height: 42.335vw;
+    height: 50.335vw;
     padding-bottom: 2.646vw;
     box-sizing: border-box;
     text-align: center;
+}
+
+.eco-efficiency-card img {
+    width: 60%;
 }
 .eco-efficiency-card .number {
     font-family: var(--font-family);
