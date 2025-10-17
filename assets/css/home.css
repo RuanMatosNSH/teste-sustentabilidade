@@ -2,9 +2,11 @@ html,
 body {
     height: 100%;
     overflow: auto;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; 
     -ms-overflow-style: none;
     padding-bottom: 1.875rem;
+    overscroll-behavior: none;
+     -webkit-overflow-scrolling: touch; 
 }
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari e Edge */
