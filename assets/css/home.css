@@ -5,8 +5,8 @@ body {
     scrollbar-width: none; 
     -ms-overflow-style: none;
     padding-bottom: 1.875rem;
-    overscroll-behavior: none;
-     -webkit-overflow-scrolling: touch; 
+    overscroll-behavior: auto !important;
+     -webkit-overflow-scrolling: touch !important; 
 }
 html::-webkit-scrollbar {
     display: none; /* Chrome, Safari e Edge */
